@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+/*|| RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/*||VARIABLES */
+:root {
+    /*FONTS*/
+    --FF-LD: "Lexend Deca", sans-serif;
+    --FF-BS: "Big Shoulders", sans-serif;
+    --FS: 15px;
+    --FW-400: 400;
+    --FW-500: 500;
+
+    /*Primary Colors*/ 
+    --BRGHT-ORANGE: hsl(31, 77%, 52%);
+    --DRK-CYAN: hsl(184, 100%, 22%);
+    --VRY-DRK-CYAN: hsl(179, 100%, 13%);
+
+    /*Neutral Colors*/
+    --TRANSPARENT-WHITE: hsla(0, 0%, 100%, 0.75);
+    --VRY-LGHT-GRAY: hsl(0, 0%, 95%);
+
+    /*STNDRD PADDING*/
+    --STNDRD-PADDING: 2.5rem 3rem;
+}
+
+/*|| GENERAL STYLES*/
+
+html {
+    font-size: var(--FS);
+    font-family: var(--FF-LD);
+    font-weight: var(--FW-400);
+}
+
+body {
+    background-color: var(--VRY-LGHT-GRAY);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.75;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--VRY-LGHT-GRAY); 
+    font-family: var(--FF-BS);
+    font-weight: var(--FW-500);
+    text-transform: uppercase;
+    font-size: 2.25rem;
+}
+
+p {
+    color: var(--TRANSPARENT-WHITE);
+    text-align: left;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+/*|| CONTAINER*/
+.container {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 6em 2.5em;
+}
+
+section > * {
+    padding: 0.5rem 0;
+}
+
+.sedanSection {
+    background-color: var(--BRGHT-ORANGE);
+    border-radius: 10px 10px 0 0;
+    padding: var(--STNDRD-PADDING);
+
+}
+
+.suvSection {
+    background-color: var(--DRK-CYAN);
+    padding: var(--STNDRD-PADDING);
+
+}
+
+.luxurySection{
+    background-color: var(--VRY-DRK-CYAN);
+    border-radius: 0 0 10px 10px;
+    padding: var(--STNDRD-PADDING);
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 35px;
+    border: none;
+    width: 150px;
+}
+.sedanBtn {
+    color: var(--BRGHT-ORANGE);
+}
+.suvBtn {
+    color: var(--DRK-CYAN);
+}
+.luxuryBtn {
+    color: var(--VRY-DRK-CYAN);
+}
+
+@media screen and (min-width: 762px) {
+    .container {
+        display: flex;
+        flex-flow: row;
+        margin: 3rem;
+        max-width: 900px;
+        min-height: 500px;
+        position: relative;
+    }
+    .sedanSection {
+        border-radius: 10px 0 0 10px;
+    }   
+    .luxurySection {
+        border-radius: 0 10px 10px 0;
+    }
+    .btn {
+        position: absolute;
+        bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

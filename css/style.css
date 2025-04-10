@@ -101,18 +101,36 @@ section > * {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 35px;
-    border: none;
+    border: 2px solid var(--VRY-LGHT-GRAY);
     width: 150px;
+}
+.btn:hover {
+    cursor: pointer;
 }
 .sedanBtn {
     color: var(--BRGHT-ORANGE);
 }
+.sedanBtn:hover {
+    background-color: var(--BRGHT-ORANGE);
+    color: var(--VRY-LGHT-GRAY);
+}
 .suvBtn {
     color: var(--DRK-CYAN);
+}
+.suvBtn:hover {
+    background-color: var(--DRK-CYAN);
+    color: var(--VRY-LGHT-GRAY);
 }
 .luxuryBtn {
     color: var(--VRY-DRK-CYAN);
 }
+.luxuryBtn:hover {
+    background-color: var(--VRY-DRK-CYAN);
+    color: var(--VRY-LGHT-GRAY);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 
 @media screen and (min-width: 762px) {
     .container {
@@ -134,28 +152,3 @@ section > * {
         bottom: 50px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
